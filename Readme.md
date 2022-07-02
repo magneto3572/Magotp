@@ -25,7 +25,7 @@ dependencies {
 Step 3. After Adding the Dependency, All you need to add OTP composable
 ```java
 
-a. Use Otpfilled for Otp type where you want to set custom background drawable
+a. Use Otp filled for Otp type where you want to set custom background drawable
 
  OtpComposableFilled(
             heightInDP = 50.dp,
