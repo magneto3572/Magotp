@@ -1,4 +1,5 @@
 plugins {
+    id 'maven-publish'
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
@@ -36,6 +37,19 @@ android {
     packagingOptions {
         resources {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.mangneto3572'
+                artifactId = 'Magotp'
+                version = '1.0.0'
+            }
         }
     }
 }
