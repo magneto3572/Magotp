@@ -77,7 +77,7 @@ Automatic Otp capture(Dafault false)
 ## Password Toggle:-
 
 1. passwordToggle = false, // if you want to display digit on box
-2. passwordToggle = true, // if you want to display dor in box for privacy
+2. passwordToggle = true, // if you want to display dot in box for privacy
 
 ## Modifier:-
 
