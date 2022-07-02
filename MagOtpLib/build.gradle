@@ -48,7 +48,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.mangneto3572'
                 artifactId = 'Magotp'
-                version = '1.0.2'
+                version = '1.0.3'
             }
         }
     }
