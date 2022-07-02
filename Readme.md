@@ -1,6 +1,12 @@
 # Mag Otp
 
+[![Build Status](https://travis-ci.com/phplicengine/bitly.svg?branch=master)](https://travis-ci.com/phplicengine/bitly)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/phplicengine/bitly/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/phplicengine/bitly/?branch=master)
 [![](https://jitpack.io/v/magneto3572/Magotp.svg)](https://jitpack.io/#magneto3572/Magotp)
+[![Latest Stable Version](https://img.shields.io/packagist/v/phplicengine/bitly?label=version)](https://packagist.org/packages/phplicengine/bitly)
+[![php](https://img.shields.io/packagist/php-v/phplicengine/bitly)](https://packagist.org/packages/phplicengine/bitly)
+[![License](https://img.shields.io/packagist/l/phplicengine/bitly)](https://packagist.org/packages/phplicengine/bitly)
+
 
 ## How to integrate into your app?
 Integrating the project is simple. All you need to do is follow the below steps
