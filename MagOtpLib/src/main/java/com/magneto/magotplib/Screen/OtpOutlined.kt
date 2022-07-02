@@ -42,6 +42,7 @@ fun OtpComposableOutlined(
     focusColor : Color,
     unfocusColor: Color,
     cornerRadius : Dp,
+    modifier: Modifier,
     automaticCapture : Boolean? = false,
     otpComposableType : Int = ComposableType.TYPE_FOUR,
     onvaluechange: (String) -> Unit
@@ -81,7 +82,7 @@ fun OtpComposableOutlined(
     val focusManager = LocalFocusManager.current
 
     Row(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = modifier,
         horizontalArrangement = Arrangement.SpaceEvenly
     ) {
         OutlinedTextField(
