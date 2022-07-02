@@ -23,4 +23,38 @@ dependencies {
 ```
 
 Step 3. After Adding the Dependency, All you need to add OTP composable
+```java
+1. Use Otpfilled for Otp type where you want to set custom background drawable
+
+ OtpComposableFilled(
+            heightInDP = 50.dp,
+            widthInDp = 50.dp,
+            backgroundColor = Color.Transparent,
+            cornerRadius =8.dp ,
+            passwordToggle = false,
+            automaticCapture = true,
+            arrangement = Arrangement.SpaceEvenly,
+            backgroundDrawable = R.drawable.ic_rectangle_background,
+            modifier = Modifier.fillMaxWidth())
+        {
+            Log.d("LogTag", it.toString())
+        }
+        
+ 2. Use Otp outline composable for otp type where you want focus and unfocus border
+ 
+  OtpComposableOutlined(
+            widthInDp = 50.dp,
+            heightInDp = 50.dp,
+            backgroundColor = Color.Transparent,
+            passwordToggle = false,
+            focusColor = Color.Green,
+            unfocusColor = Color.DarkGray,
+            modifier = Modifier.fillMaxWidth())
+            cornerRadius = 8.dp,)
+            {
+                Log.d("LogTag", it.toString())
+            }
+
+```
+
 
