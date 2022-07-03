@@ -60,7 +60,7 @@ a. Use Otp filled for Otp type where you want to set custom background drawable
 ```
 ## Features and property
 
-## Automatic Otp capture(Dafault false) :-
+## Automatic Otp capture(Default false) :-
 
 1. automaticCapture = true,  // True when you want to detect otp automatically with user consent
 2. automaticCapture = false, // By default it is false
