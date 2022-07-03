@@ -4,6 +4,19 @@
 [![](https://jitpack.io/v/magneto3572/Magotp.svg)](https://jitpack.io/#magneto3572/Magotp)
 
 
+<h5>Screenshots</h5>
+
+<div align="center">
+     <img src="/1.jpeg" width="200px" height="350px"</img> 
+     <img src="/2.jpeg"width="200px" height="350px"</img>
+     <img src="/3.jpeg" width="200px" height="350px"</img>
+     <img src="/4.jpeg" width="200px" height="350px"</img>
+     <img src="/5.jpeg" width="200px" height="350px"</img> 
+     <img src="/6.jpeg"width="200px" height="350px"</img>
+     <img src="/7.jpeg" width="200px" height="350px"</img>
+</div>
+
+
 ## How to integrate into your app?
 Integrating the project is simple. All you need to do is follow the below steps
 
