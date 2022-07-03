@@ -7,13 +7,13 @@
 <h5>Screenshots</h5>
 
 <div align="center">
-     <img src="/1.jpg" width="200px" height="350px"</img> 
-     <img src="/2.jpg"width="200px" height="350px"</img>
-     <img src="/3.jpg" width="200px" height="350px"</img>
-     <img src="/4.jpg" width="200px" height="350px"</img>
-     <img src="/5.jpg" width="200px" height="350px"</img> 
-     <img src="/6.jpg"width="200px" height="350px"</img>
-     <img src="/7.jpg" width="200px" height="350px"</img>
+     <img src="/1.jpg" width="180px" height="350px"</img> 
+     <img src="/2.jpg"width="180px" height="350px"</img>
+     <img src="/3.jpg" width="180px" height="350px"</img>
+     <img src="/4.jpg" width="180px" height="350px"</img>
+     <img src="/5.jpg" width="180px" height="350px"</img> 
+     <img src="/6.jpg"width="180px" height="350px"</img>
+     <img src="/7.jpg" width="180px" height="350px"</img>
 </div>
 
 
