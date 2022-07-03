@@ -11,7 +11,6 @@
      <img src="/3.jpg" width="180px" height="350px"</img>
      <img src="/4.jpg" width="180px" height="350px"</img>
      <img src="/5.jpg" width="180px" height="350px"</img> 
-     <img src="/6.jpg"width="180px" height="350px"</img>
      <img src="/7.jpg" width="180px" height="350px"</img>
 </div>
 
