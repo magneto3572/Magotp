@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.magneto.magotp.ui.theme.MagotpTheme
@@ -26,16 +27,15 @@ class MainActivity : ComponentActivity() {
             Column() {
                 MagotpTheme() {
                     OtpComposableFilled(
-                        heightInDP = 50.dp,
-                        widthInDp = 50.dp,
-                        backgroundColor =  Color.White,
+                        heightInDP = 45.dp,
+                        widthInDp = 45.dp,
+                        cursorColor =  Color.Black,
                         cornerRadius = 8.dp ,
                         passwordToggle = false,
                         arrangement = Arrangement.SpaceEvenly ,
-                        modifier = Modifier.fillMaxWidth(),)
+                        modifier = Modifier.fillMaxWidth())
                         {
                             Log.d("LogTag", it.toString())
-
                         }
                 }
             }
