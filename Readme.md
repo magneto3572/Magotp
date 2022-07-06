@@ -1,6 +1,19 @@
 # Mag Otp
 
+[![Build Status](https://travis-ci.com/phplicengine/bitly.svg?branch=master)](https://travis-ci.com/phplicengine/bitly)
 [![](https://jitpack.io/v/magneto3572/Magotp.svg)](https://jitpack.io/#magneto3572/Magotp)
+
+
+<h5>Screenshots</h5>
+
+<div align="center">
+     <img src="/2.jpg"width="180px" height="350px"</img>
+     <img src="/3.jpg" width="180px" height="350px"</img>
+     <img src="/4.jpg" width="180px" height="350px"</img>
+     <img src="/5.jpg" width="180px" height="350px"</img> 
+     <img src="/7.jpg" width="180px" height="350px"</img>
+</div>
+
 
 ## How to integrate into your app?
 Integrating the project is simple. All you need to do is follow the below steps
@@ -58,50 +71,46 @@ a. Use Otp filled for Otp type where you want to set custom background drawable
 ```
 ## Features and property
 
-Automatic Otp capture(Dafault false)
+## Automatic Otp capture(Default false) :-
 
 1. automaticCapture = true,  // True when you want to detect otp automatically with user consent
 2. automaticCapture = false, // By default it is false
 
-## Size
+## Size :-
 
 1. widthInDp = 50.dp,  // Size in dp for otp box size
 2. heightinDp = 50.dp, // Size in dp for otp box size
 
-## Color:-
+## Color :-
 
 1.backgroundColor = Color.Transparent, // for transparent background else your color choice for box background
 2.focusColor = Color.Green,  // border Color when user on active box
 3.unfocusColor = Color.DarkGray, // border Color when user not on active box
 
-## Password Toggle:-
+## Password Toggle :-
 
 1. passwordToggle = false, // if you want to display digit on box
-2. passwordToggle = true, // if you want to display dor in box for privacy
+2. passwordToggle = true, // if you want to display dot in box for privacy
 
-## Modifier:-
+## Modifier :-
 
 1. modifier = Modifier.fillMaxWidth()) //Parent Row modfier
 
-## Arrangment:-
+## Arrangment :-
 
 1.arrangement = Arrangement.SpaceEvenly, // Arrangement in parent row
 
-## Corner Radius:-
+## Corner Radius :-
 
 1.cornerRadius = 8.dp // Border radius for OTP box
 
-## OnvalueChange;-
+## OnvalueChange:-
 
 1. Return the string when the all the box is filled
 
-## OTP composable Type:-
+## OTP composable Type :-
 
 1. otpComposableType = ComposableType.TYPE_FOUR // When you want otp composable with four boxes
 2. otpComposableType = ComposableType.TYPE_SIX // When you want otp composable with six boxes
-
-
-
-
 
 
