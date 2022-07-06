@@ -108,9 +108,13 @@ a. Use Otp filled for Otp type where you want to set custom background drawable
 
 1. Return the string when the all the box is filled
 
-## OTP composable Type :-
+## Font Size :-
 
-1. otpComposableType = ComposableType.TYPE_FOUR // When you want otp composable with four boxes
-2. otpComposableType = ComposableType.TYPE_SIX // When you want otp composable with six boxes
+1. fontSize = 10 // Pass Int as per your requirement
+
+## Cursor Color :-
+
+1. Cursor Color :- Pass Color as per your requirement
+
 
 
