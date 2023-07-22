@@ -36,7 +36,6 @@ class MainActivity : ComponentActivity() {
                             focusColor =  Color.Black,
                             unfocusColor = Color.LightGray,
                             passwordToggle = false,
-                            horizontalArrangement = Arrangement.SpaceEvenly ,
                             modifier = Modifier.fillMaxWidth(),
                             backgroundColor = Color.White,
                             onvaluechange = {
