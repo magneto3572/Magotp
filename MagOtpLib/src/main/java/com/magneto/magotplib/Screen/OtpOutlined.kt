@@ -43,6 +43,7 @@ fun OtpComposableOutlined(
     unfocusColor: Color,
     cornerRadius : Dp,
     modifier: Modifier,
+    horizontalArrangement: Arrangement.HorizontalOrVertical = Arrangement.SpaceEvenly,
     automaticCapture : Boolean? = false,
     otpComposableType : Int = ComposableType.TYPE_FOUR,
     onvaluechange: (String) -> Unit
@@ -83,7 +84,7 @@ fun OtpComposableOutlined(
 
     Row(
         modifier = modifier,
-        horizontalArrangement = Arrangement.SpaceEvenly
+        horizontalArrangement = horizontalArrangement
     ) {
         OutlinedTextField(
             modifier = Modifier
@@ -115,9 +116,8 @@ fun OtpComposableOutlined(
                 unfocusedBorderColor = unfocusColor
             ),
             onValueChange = {
-                otp1 = it
                 if (it.length == 1) {
-                    item1.freeFocus()
+                    otp1 = it
                     item2.requestFocus()
                 }
             },
@@ -130,7 +130,6 @@ fun OtpComposableOutlined(
                 .onKeyEvent {
                     if (it.key.nativeKeyCode == 67) {
                         otp2 = ""
-                        item1.requestFocus()
                         item2.freeFocus()
                         true
                     } else {
@@ -153,8 +152,8 @@ fun OtpComposableOutlined(
                 unfocusedBorderColor = unfocusColor
             ),
             onValueChange = {
-                otp2 = it
                 if (it.length == 1) {
+                    otp2 = it
                     item2.freeFocus()
                     item3.requestFocus()
                 }
@@ -168,7 +167,6 @@ fun OtpComposableOutlined(
                 .onKeyEvent {
                     if (it.key.nativeKeyCode == 67) {
                         otp3 = ""
-                        item2.requestFocus()
                         item3.freeFocus()
                         true
                     } else {
@@ -191,8 +189,8 @@ fun OtpComposableOutlined(
                 unfocusedBorderColor = unfocusColor
             ),
             onValueChange = {
-                otp3 = it
                 if (it.length == 1) {
+                    otp3 = it
                     item3.freeFocus()
                     item4.requestFocus()
                 }
@@ -205,7 +203,6 @@ fun OtpComposableOutlined(
                 .onKeyEvent {
                     if (it.key.nativeKeyCode == 67) {
                         otp4 = ""
-                        item3.requestFocus()
                         item4.freeFocus()
                         true
                     } else {
@@ -252,7 +249,6 @@ fun OtpComposableOutlined(
                     .onKeyEvent {
                         if (it.key.nativeKeyCode == 67) {
                             otp5 = ""
-                            item4.requestFocus()
                             item5.freeFocus()
                             true
                         } else {
@@ -275,8 +271,8 @@ fun OtpComposableOutlined(
                     unfocusedBorderColor = unfocusColor
                 ),
                 onValueChange = {
-                    otp5 = it
                     if (it.length == 1) {
+                        otp5 = it
                         if (otpComposableType != 4) {
                             item6.requestFocus()
                         }
@@ -292,7 +288,6 @@ fun OtpComposableOutlined(
                     .onKeyEvent {
                         if (it.key.nativeKeyCode == 67) {
                             otp6 = ""
-                            item5.requestFocus()
                             item6.freeFocus()
                             true
                         } else {
@@ -315,8 +310,9 @@ fun OtpComposableOutlined(
                     unfocusedBorderColor = unfocusColor
                 ),
                 onValueChange = {
-                    otp6 = it
+
                     if (it.length == 1) {
+                        otp6 = it
                         if (otpComposableType != 4) {
                             otp6 = it
                             string = otp1 + otp2 + otp3 + otp4 + otp5 + otp6

@@ -127,8 +127,8 @@ fun OtpComposableFilled(
                 textStyle = LocalTextStyle.current.copy(textAlign = TextAlign.Center, fontSize = fontSize?.sp ?: 14.sp),
                 cursorBrush = if (cursorColor != null) SolidColor(cursorColor) else SolidColor(Color.Black),
                 onValueChange = {
-                    otp1 = it
                     if(it.length == 1){
+                        otp1 = it
                         item2.requestFocus()
                     }
                 })
@@ -150,7 +150,6 @@ fun OtpComposableFilled(
                     .onKeyEvent {
                         if (it.key.nativeKeyCode == 67) {
                             otp2 = ""
-                            item1.requestFocus()
                             item2.freeFocus()
                             true
                         } else {
@@ -166,8 +165,8 @@ fun OtpComposableFilled(
                 textStyle = LocalTextStyle.current.copy(textAlign = TextAlign.Center, fontSize = fontSize?.sp ?: 14.sp),
                 cursorBrush = if (cursorColor != null) SolidColor(cursorColor) else SolidColor(Color.Black),
                 onValueChange = {
-                    otp2 = it
                     if(it.length == 1){
+                        otp2 = it
                         item3.requestFocus()
                     } },
             )
@@ -188,7 +187,6 @@ fun OtpComposableFilled(
                     .onKeyEvent {
                         if (it.key.nativeKeyCode == 67) {
                             otp3 = ""
-                            item2.requestFocus()
                             item3.freeFocus()
                             true
                         } else {
@@ -203,8 +201,9 @@ fun OtpComposableFilled(
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword, imeAction = ImeAction.Next),
                 textStyle = LocalTextStyle.current.copy(textAlign = TextAlign.Center, fontSize = fontSize?.sp ?: 14.sp),
                 cursorBrush = if (cursorColor != null) SolidColor(cursorColor) else SolidColor(Color.Black),
-                onValueChange = { otp3 = it
+                onValueChange = {
                     if(it.length == 1){
+                        otp3 = it
                         item4.requestFocus()
                     } },
             )
@@ -227,7 +226,6 @@ fun OtpComposableFilled(
                         if (it.key.nativeKeyCode == 67) {
                             string = ""
                             otp4 = ""
-                            item3.requestFocus()
                             item4.freeFocus()
                             true
                         } else {
@@ -276,7 +274,6 @@ fun OtpComposableFilled(
                             if (it.key.nativeKeyCode == 67) {
                                 string = ""
                                 otp5 = ""
-                                item4.requestFocus()
                                 item5.freeFocus()
                                 true
                             } else {
@@ -292,8 +289,8 @@ fun OtpComposableFilled(
                     textStyle = LocalTextStyle.current.copy(textAlign = TextAlign.Center, fontSize = fontSize?.sp ?: 14.sp),
                     cursorBrush = if (cursorColor != null) SolidColor(cursorColor) else SolidColor(Color.Black),
                     onValueChange = {
-                        otp5 = it
                         if(it.length == 1){
+                            otp5 = it
                             if(otpComposableType != 4){
                                 item6.requestFocus()
                             }
@@ -323,7 +320,6 @@ fun OtpComposableFilled(
                             if (it.key.nativeKeyCode == 67) {
                                 string = ""
                                 otp6 = ""
-                                item5.requestFocus()
                                 item6.freeFocus()
                                 true
                             } else {
